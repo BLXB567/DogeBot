@@ -474,7 +474,7 @@ const math = (teks) => {
           thumbnail: iye,
           surface: 200,
           message: iye,
-          orderTitle: "Xeon",
+          orderTitle: "Renge ~Bot",
           sellerJid: "0@s.whatsapp.net",
         },
       },
@@ -786,7 +786,7 @@ if (!itsMe && !isOwner)return
               jpegThumbnail: fs.readFileSync(`./stik/thumb.jpeg`), //Gambarnye
             },
             title: "FakeReply Bang", //Kasih namalu
-            description: "Xeon",
+            description: "Renge ~Bot",
             currencyCode: "USD",
             priceAmount1000: "2000",
             retailerId: "Renge ~Bot",
@@ -5431,7 +5431,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         fakeyt(`「 *SELF-MODE* 」`);
         break;
       case "hidetag":
-        if (!mek.key.fromMe) return reply("This feature is only for the owner 🗿");
+        if (!groupAdmins) return reply("This feature is only for the owner 🗿");
         if (!isGroup) return reply('this feature is only for groups');
         var value = args.join(" ");
         var group = await xeon.groupMetadata(from);
