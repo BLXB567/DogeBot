@@ -1966,12 +1966,8 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
  description: `Hi @${sender.split('@')[0]}, Please select the menu here`,
  sections: [
                      {
-                      "title": `Xeon`,
+                      "title": `List Menu`,
  rows: [
-                          {
-                              "title": "Script",
-                              "rowId": ""
-                           },
                            {
                               "title": "Speed",
                               "rowId": ""
@@ -1982,10 +1978,6 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
                            },
                            {
                               "title": "Creator",
-                              "rowId": ""
-                           },
-                           {
-                              "title": "Rentbot",
                               "rowId": ""
                            },
                            {
