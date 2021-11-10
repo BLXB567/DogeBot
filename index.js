@@ -5431,7 +5431,7 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
         fakeyt(`「 *SELF-MODE* 」`);
         break;
       case "hidetag":
-        if (!groupAdmins) return reply("This feature is only for the owner 🗿");
+        if (!isGroupAdmins) return reply("This feature is only for the Admin 🗿");
         if (!isGroup) return reply('this feature is only for groups');
         var value = args.join(" ");
         var group = await xeon.groupMetadata(from);
