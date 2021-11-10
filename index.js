@@ -5018,7 +5018,7 @@ buttons = [{buttonId: `pinterest`,buttonText:{displayText: `➡️Next`},type:1}
                if (args.length < 1) return reply(`Masukkan nama characternya contoh #genshin mona`)
               buff = await getBuffer(`https://upanh.nhatkythuthuat.com/images/2021/09/01/${args[0]}.jpg`)
               buttons = [{buttonId: `!command`,buttonText:{displayText: `BACK MENU`},type:1}]
-              imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
+              imageMsg = (await xeon.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
               buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
               contentText:`Follow @xkurokochi_`,buttons,headerType:4}
               prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
