@@ -1273,7 +1273,6 @@ async function sendFileFromUrl(from, url, caption, msg, men) {
       }
     }
     // Runtime Di Bio Bang🌿\\
-	let setting = JSON.parse(fs.readFileSync('./setting.json'))
     let settingstatus = 0;
     if (new Date() * 1 - settingstatus > 1000) {
       let _uptime = process.uptime() * 1000;
@@ -3961,13 +3960,6 @@ case "intake3": // by xeon
               },
               type: 1,
             },
-	    {
-              buttonId: `donasi ${args[0]}|video`,
-              buttonText: {
-                displayText: `Donate ☕`,
-              },
-              type: 1,
-            },
           ]
         );
         break;
@@ -4165,13 +4157,6 @@ sendButMessage(from, tiyo, `Renge ~Bot`, [
             },
             type: 1,          
           },
-	    {
-              buttonId: `donasi ${args[0]}|video`,
-              buttonText: {
-                displayText: `Donate ☕`,
-              },
-              type: 1,
-            },
         ]);               
         break;                 
    case 'bc':
@@ -5029,6 +5014,16 @@ buttons = [{buttonId: `pinterest`,buttonText:{displayText: `➡️Next`},type:1}
           fromMe: true,
         });
         break;
+	case "buildgi": 
+               if (args.length < 1) return reply(`Masukkan nama characternya contoh #genshin mona`)
+              buff = await getBuffer(`https://upanh.nhatkythuthuat.com/images/2021/09/01/${args[0]}.jpg`)
+              buttons = [{buttonId: `!command`,buttonText:{displayText: `BACK MENU`},type:1}]
+              imageMsg = (await ikyy.prepareMessageMedia(buff, "imageMessage", { thumbnail: buff, })).imageMessage
+              buttonsMessage = {footerText:'Renge Bot', imageMessage: imageMsg,
+              contentText:`Follow @xkurokochi_`,buttons,headerType:4}
+              prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{quoted: freply})
+              xeon.relayWAMessage(prep)
+		break;
       case "tomp3":
         if (!isQuotedVideo) return fakegroup("Reply the video!");
         fakegroup(mess.wait);
@@ -5109,7 +5104,7 @@ buttons = [{buttonId: `pinterest`,buttonText:{displayText: `➡️Next`},type:1}
   case 'buttons5':
               const mathdare = dare[Math.floor(Math.random() * (dare.length))]
               result = `${mathdare}`
-              buttons = [{buttonId: `buttons6`,buttonText:{displayText: 'Truth'},type:1},{buttonId:`buttons5`,buttonText:{displayText:'Dare'},type:1},{buttonId:`${prefix}donasi`,buttonText:{displayText:'Donasi ☕'},type:1}]
+              buttons = [{buttonId: `buttons6`,buttonText:{displayText: 'Truth'},type:1},{buttonId:`buttons5`,buttonText:{displayText:'Dare'},type:1}]
               buttonsMessage = { contentText: `${result}`, footerText: 'Play again?', buttons: buttons, headerType: 1 }
               prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{})
               xeon.relayWAMessage(prep)
@@ -5117,7 +5112,7 @@ buttons = [{buttonId: `pinterest`,buttonText:{displayText: `➡️Next`},type:1}
           case 'buttons6':
               const randomtruth = truth[Math.floor(Math.random() * truth.length)]
               result = `${randomtruth}`
-              buttons = [{buttonId: `buttons6`,buttonText:{displayText: 'Truth'},type:1},{buttonId:`${prefix}buttons5`,buttonText:{displayText:'Dare'},type:1},{buttonId:`${prefix}donasi`,buttonText:{displayText:'Donasi ☕'},type:1}]
+              buttons = [{buttonId: `buttons6`,buttonText:{displayText: 'Truth'},type:1},{buttonId:`${prefix}buttons5`,buttonText:{displayText:'Dare'},type:1}]
               buttonsMessage = { contentText: `${result}`, footerText: 'Play again?', buttons: buttons, headerType: 1 }
               prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{})
               xeon.relayWAMessage(prep)
@@ -5126,7 +5121,7 @@ buttons = [{buttonId: `pinterest`,buttonText:{displayText: `➡️Next`},type:1}
           case 'truth':
           case 'dare':
               result =`*Truth Or Dare*\nPlayers are given a choice between answering questions honestly, or taking on the challenge given`
-              buttons = [{buttonId: `buttons6`,buttonText:{displayText: 'Truth'},type:1},{buttonId:`buttons5`,buttonText:{displayText:'Dare'},type:1},{buttonId:`${prefix}donasi`,buttonText:{displayText:'Donasi ☕'},type:1}]
+              buttons = [{buttonId: `buttons6`,buttonText:{displayText: 'Truth'},type:1},{buttonId:`buttons5`,buttonText:{displayText:'Dare'},type:1}]
               buttonsMessage = { contentText: `${result}`, footerText: 'Truth or Dare?', buttons: buttons, headerType: 1 }
               prep = await xeon.prepareMessageFromContent(from,{buttonsMessage},{contextInfo: { mentionedJid: [sender]},quoted:ftex})
               xeon.relayWAMessage(prep)
@@ -5182,7 +5177,7 @@ case 'waifu':
               let wipu = (await axios.get(`https://raw.githubusercontent.com/Arya-was/endak-tau/main/${command}.json`)).data
               let wipi = wipu[Math.floor(Math.random() * (wipu.length))]
               fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(wipi))
-		      buttons = [{buttonId: `waifu`,buttonText:{displayText: `➡️Next`},type:1},{buttonId:`owner`,buttonText:{displayText:'🦄OWNER'},type:1},{buttonId:`${prefix}donasi`,buttonText:{displayText:'Donasi ☕'},type:1}]
+		      buttons = [{buttonId: `waifu`,buttonText:{displayText: `➡️Next`},type:1},{buttonId:`owner`,buttonText:{displayText:'🦄OWNER'},type:1}]
               imageMsg = ( await xeon.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
               buttonsMessage = {footerText:'Dont forget to donate lol ☕', imageMessage: imageMsg,
               contentText:`Click Next to go to the next picture`,buttons,headerType:4}
@@ -5861,10 +5856,6 @@ Source : ${anu.result.source}
         teks = `${kyun(run)}`;
         reply(teks);
         break;
-	case "donate":
-       case "donasi":
-              textImg(setting.txtDonasi)
-              break;
       case "speed":
       case "ping":
         const timestamp = speed();
