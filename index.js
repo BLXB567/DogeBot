@@ -1273,6 +1273,7 @@ async function sendFileFromUrl(from, url, caption, msg, men) {
       }
     }
     // Runtime Di Bio Bang🌿\\
+	let setting = JSON.parse(fs.readFileSync('./setting.json'))
     let settingstatus = 0;
     if (new Date() * 1 - settingstatus > 1000) {
       let _uptime = process.uptime() * 1000;
@@ -5846,6 +5847,10 @@ Source : ${anu.result.source}
         teks = `${kyun(run)}`;
         reply(teks);
         break;
+	case "donate":
+       case "donasi":
+              textImg(setting.txtDonasi)
+              break;
       case "speed":
       case "ping":
         const timestamp = speed();
