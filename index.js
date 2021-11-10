@@ -969,7 +969,7 @@ sendEphemeral: false,
 "body": `${ucapanWaktu}`,
 "mediaType": "2",
 "thumbnailUrl": "https://i.ibb.co/y0RYgzB/FB-IMG-1635413002830.jpg",
-"mediaUrl": "https://youtube.com/channel/UCvAo9TZ0Pw9vrJ_0WYRyO3A",
+"mediaUrl": "https://instagram.com/xkurokochi_",
 "thumbnail": fs.readFileSync('./stik/thumb.jpeg'),
 "sourceUrl": "",
 },mentionedJid:[sender]}, quoted : fgif})
@@ -1814,7 +1814,7 @@ case 'buglink':
                 "previewType": "PHOTO",
                 "thumbnailUrl": "https://i.ibb.co/y0RYgzB/FB-IMG-1635413002830.jpg",
                 "thumbnail": fs.readFileSync(`./xeon.jpg`),
-                "sourceUrl": "https://youtube.com/channel/UCvAo9TZ0Pw9vrJ_0WYRyO3A"}}})
+                "sourceUrl": "https://instagram.com/xkurokochi_"}}})
                 break
         case 'bugbutton':
         if (!isOwner && !mek.key.fromMe) return reply('Only owner can use this feature')
