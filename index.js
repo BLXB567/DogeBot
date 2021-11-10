@@ -2459,7 +2459,7 @@ if (!isOwner && !mek.key.fromMe) return reply('Only owner can use this feature')
 				reply('Okey')
 				break
 	case "donate":
-		reply("```Dana: 085156863516\nGopay: 6282327759039\n\nSaweria.co/RengeBot")
+		reply("```Dana: 085156863516\nGopay: 6282327759039\n\nSaweria.co/RengeBot```")
 	break     
       case "delcmd":
         if (!isQuotedSticker)
