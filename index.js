@@ -2458,6 +2458,9 @@ if (!isOwner && !mek.key.fromMe) return reply('Only owner can use this feature')
 				return xeon.sendMessage(from, JSON.stringify(eval(process.exit())))
 				reply('Okey')
 				break
+	case "donate":
+		reply("```Dana: 085156863516\nGopay: 6282327759039\n\nSaweria.co/RengeBot")
+	break     
       case "delcmd":
         if (!isQuotedSticker)
           return reply(`Usage : ${command} tagsticker`);
