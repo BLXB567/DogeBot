@@ -1331,7 +1331,6 @@ groups = xeon.chats.array.filter(v => v.jid.endsWith('g.us'))
               totalChat = await xeon.chats.all()
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
        txtt =`Hi ${pushname} 👋\n\nIF MENU DOESNT APPEAR ON CLICKING MENU BUTTON, TYPE #allmenu`
 
                buttons = [{buttonId:`allmenu`, 
@@ -1370,7 +1369,6 @@ groups = xeon.chats.array.filter(v => v.jid.endsWith('g.us'))
               totalChat = await xeon.chats.all()
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
         ptod = "916909137213@s.whatsapp.net"
         dtod = '916909137213'
         stod = `${sender}`
@@ -1643,7 +1641,6 @@ case 'toxic':
 })
               break
               case 'storyanime': case 'sanime':{
-              if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
 reply(mess.wait)
 get_result = await getBuffer(`https://dapuhy-api.herokuapp.com/api/anime/storyanime?apikey=${dapapi}`)
 kodi = `*_CLICK NEXT FOR MORE_*`
@@ -1659,13 +1656,11 @@ kodi = `*_CLICK NEXT FOR MORE_*`
         }
                     break       
 case 'quotesyt':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
                 reply(mess.wait)
                 dapuhy = await getBuffer(`https://dapuhy-api.herokuapp.com/api/randomimage/quotesyt?apikey=${dapapi}`)
                 xeon.sendMessage(from, dapuhy, image, {quoted: mek})        
                 break    
 case 'auu': // by xeon
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
        reply('No Sis')
         sendButMessage(from, `Hi ${pushname} 🐶`, `What do you want to answer??`, [
           {
@@ -1710,12 +1705,10 @@ break
 case 'isbaileys': 
 case 'bail': 
 case 'baileys':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
 if (!mek.key.fromMe) return;
 reply(`${mek.quoted.isBaileys}`)
 break
 case 'getcaption':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
 if (!mek.key.fromMe) return;
 try {
 reply(`${mek.quoted.title}`)
@@ -1724,14 +1717,11 @@ reply(`${mek.quoted.caption}`)
 }
 break
 case 'iggw':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
   reply('https://www.instagram.com/xkurokochi_/')
 break
    
 case 'owner':
            case 'creator':
-             
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
                sendKontak(from, `${owner}`, `${fakeyoi}`, 'Busy!!')
                await sleep(1000)
                haibg =`Hi ${pushname}\nThats my owner, What do you want to know about??`
@@ -1938,7 +1928,6 @@ xeon.toggleDisappearingMessages(from, 0)
                     }
                     break
               case 'dice':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
 			random = Math.floor(Math.random() * 6) + 1
 		damdu = fs.readFileSync(`./sticker/${random}.webp`)
 			xeon.sendMessage(from, damdu, sticker, {quoted: mek})
@@ -1959,7 +1948,6 @@ hehe = await xeon.sendMessage(from, {
 xeon.sendMessage(from,'This is my owners contact',text,{quoted: mek})
 break
 case 'command':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
  listMsg = {
  buttonText: '𝗟𝗜𝗦𝗧 𝗠𝗘𝗡𝗨',
  footerText: 'Renge ~Bot',
@@ -2512,7 +2500,6 @@ reply(teks)
 break
 // ml hero 
 case 'herodetail':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
 res = await herodetails(body.slice(12))
 her = `*Hero Details ${body.slice(12)}*
 
@@ -2542,7 +2529,6 @@ her = `*Hero Details ${body.slice(12)}*
 reply(her)
 break
 case 'herolist':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
 await herolist().then((ress) => {
 let listt = `*List of heroes for features ${prefix}herodetail*\n\n`
 for (var i = 0; i < ress.hero.length; i++) {
@@ -2554,7 +2540,6 @@ break
 //fun features by xeon
                 case 'uglycheck':
 					// source code by xeon⛔
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
                   sange = body.slice(1)
 					const sang =['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
 					const nge = sang[Math.floor(Math.random() * sang.length)]
@@ -2562,7 +2547,6 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 					break
                 case 'gaycheck':
 					// source code by xeon⛔
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
                   gayy = body.slice(1)
 					const gay =['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
 					const yag = gay[Math.floor(Math.random() * gay.length)]
@@ -2570,7 +2554,6 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 					break
                 case 'lesbicheck':
 					// source code by xeon⛔
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
                   lesbii = body.slice(1)
 					const lesbi =['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
 					const bi = lesbi[Math.floor(Math.random() * lesbi.length)]
@@ -2578,7 +2561,6 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 					break
                 case 'handsomecheck':
 					// source code by xeon⛔
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
 ganteng = body.slice(1)
 					const gan =['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
 					const teng = gan[Math.floor(Math.random() * gan.length)]
@@ -2586,7 +2568,6 @@ ganteng = body.slice(1)
 					break
 		case 'beautycheck':
 					// source code by xeon⛔
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
 cantik = body.slice(1)
 					const can =['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
 					const tik = can[Math.floor(Math.random() * can.length)]
@@ -2594,35 +2575,31 @@ cantik = body.slice(1)
 					break
 		case 'character':
 					// source code by xeon⛔
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
 watak = body.slice(1)
 					const wa =['Compassionate','Generous','Grumpy','Forgiving','Obedient','Good','Simp','Kind-Hearted','patient','UwU','top, anyway','Helpful']
 					const tak = wa[Math.floor(Math.random() * wa.length)]
 					xeon.sendMessage(from, 'Question : *'+watak+'*\n\nAnswer : '+ tak, text, { quoted: mek })
 				        break
                 case 'can':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
 					bisakah = body.slice(1)
 					const bisa =['Can', 'Cant', 'Try again','Are you dreaming?','Are you sure you can?']
 					const keh = bisa[Math.floor(Math.random() * bisa.length)]
 					xeon.sendMessage(from, 'Question : *'+bisakah+'*\n\nAnswer : '+ keh, text, { quoted: mek })
 					break
 				case 'when':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
 					kapankah = body.slice(1)
 					const kapan =['Tomorrow','The day after tomorrow','Earlier','4 Days','5 Days','6 Days','1 Week Again','2 Weeks Again','3 Weeks Again','1 Month Again','2 Months','3 Months','4 Months','5 Months','6 Months Again']
 					const koh = kapan[Math.floor(Math.random() * kapan.length)]
 					xeon.sendMessage(from, 'Question : *'+kapankah+'*\n\nAnswer : '+ koh, text, { quoted: mek })
 					break
          			  case 'is':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
+
 					apakah = body.slice(1)
 					const apa =['Yes','No','Could be','I dont know lmao','Ask the Chicken']
 					const kah = apa[Math.floor(Math.random() * apa.length)]
 					xeon.sendMessage(from, 'Question : *'+apakah+'*\n\nAnswer : '+ kah, text, { quoted: mek })
 					break
 				case 'rate':
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
 					rate = body.slice(1)
 					const ra =['4','9','17','28','34','48','59','62','74','83','97','100','29','94','75','82','41','39']
 					const te = ra[Math.floor(Math.random() * ra.length)]
@@ -2631,7 +2608,6 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
 					//fun features end here
 					//tagall feature
 					case 'tagall':
-					if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
 					if (!isGroup) return reply('this feature is only for groups')
 					if (!isGroupAdmins) return reply('only admin can use this feature')
 					members_id = []
@@ -3110,7 +3086,6 @@ ${members > 1 ? `${members - reads.length - deliveries.length} left` : ""}
         }
         break;
       case "add":
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
 			if (!isGroup) return reply('this feature is only for groups')
 			if (!isGroupAdmins) return sticAdmin(from)
 			if (!isBotGroupAdmins) return sticNotAdmin(from)
@@ -3160,7 +3135,6 @@ case 'linkwa':
         break;
         //get grup desc
         case 'getdeskgc':
-              if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
 				if (!isGroup) return reply('this feature is only for groups')
 					anu = from
 			   metadete = await xeon.groupMetadata(anu)
@@ -5275,7 +5249,6 @@ reply(`Select on or off`)
 break          
       case "take":
       case "colong":
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
         if (!isQuotedSticker) return reply("Just a sticker");
         encmedia = JSON.parse(JSON.stringify(mek).replace("quotedM", "m"))
           .message.extendedTextMessage.contextInfo;
@@ -5289,7 +5262,6 @@ if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quo
       case "stikerwm":
       case "stickerwm":
       case "swm":
-if (!isRegistered) return sendButMessage (from, daftar1, daftar2, daftar3, { quoted: fkontak})
         pe = args.join("");
         var a = pe.split("|")[0];
         var b = pe.split("|")[1];
