@@ -3730,13 +3730,6 @@ break
 								},
 								{
 									"quickReplyButton": {
-										"displayText": "Script",
-										"id": "60dd75b0081979507a679f99"
-									},
-									"index": 1
-								},
-								{
-									"quickReplyButton": {
 										"displayText": "Instagram",
 										"id": "60dd75b0081979507a679f99"
 									},
@@ -5812,6 +5805,7 @@ Source : ${anu.result.source}
         });
         break;
       case "join":
+	if (!isOwner) return reply('Only owner can use this feature')
         try {
           if (!isUrl(args[0]) && !args[0].includes("whatsapp.com"))
             return reply(mess.Iv);
