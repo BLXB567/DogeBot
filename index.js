@@ -1388,39 +1388,6 @@ groups = xeon.chats.array.filter(v => v.jid.endsWith('g.us'))
 シ︎ 𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦 : ${os.platform()}
 ${readmore}
  
- ⬣ 𝙊𝙒𝙉𝙀𝙍 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝙎
-> ⬡ ${prefix}off
-> ⬡ ${prefix}isbaileys
-> ⬡ ${prefix}banchat
-> ⬡ ${prefix}unbanchat
-> ⬡ ${prefix}listbc
-> ⬡ ${prefix}setcmd
-> ⬡ ${prefix}delcmd
-> ⬡ ${prefix}listcmd
-> ⬡ ${prefix}restart
-> ⬡ ${prefix}antidelete on|off
-> ⬡ ${prefix}autotype on|off
-> ⬡ ${prefix}autoread gc in / gc off
-> ⬡ ${prefix}autovn on|off
-> ⬡ ${prefix}anticall on|off
-> ⬡ ${prefix}getcaption
-> ⬡ ${prefix}bugcatalog
-> ⬡ ${prefix}buggc id grup
-> ⬡ ${prefix}okvirtex
-> ⬡ ${prefix}on
-> ⬡ ${prefix}status
-> ⬡ ${prefix}setthumb
-> ⬡ ${prefix}settarget
-> ⬡ ${prefix}setfakeimg
-> ⬡ ${prefix}setreply
-> ⬡ ${prefix}hacked name
-> ⬡ ${prefix}setprefix
-> ⬡ ${prefix}mode /public-self/
-> ⬡ ${prefix}term <code>
-> ⬡ ${prefix}eval <code>
-> ⬡ ${prefix}colongsw reply
- 
-
  ⬣ 𝙂𝙍𝙊𝙐𝙋 𝙁𝙀𝘼𝙏𝙐𝙍𝙀𝙎
 > ⬡ ${prefix}grup 
 > ⬡ ${prefix}promote 
