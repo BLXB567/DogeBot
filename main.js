@@ -63,7 +63,7 @@ const sleep = async (ms) => {
 }
 const starts = async (client = new WAConnection()) => {
   client.logger.level = "warn";
-  client.version = [2, 2147, 14];
+  client.version = [3, 3234, 9];
   client.browserDescription = ["Subscribe Xeon", "Chrome", "3.0"];
   console.log(banner.string);
   client.on("qr", () => {
