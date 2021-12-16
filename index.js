@@ -1973,10 +1973,6 @@ case 'command':
                               "rowId": ""
                            },
                            {
-                              "title": "OwnerMenu",
-                              "rowId": ""
-                           },
-                           {
                               "title": "MakerMenu",
                               "rowId": ""
                            },
