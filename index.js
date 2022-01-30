@@ -1377,7 +1377,7 @@ groups = xeon.chats.array.filter(v => v.jid.endsWith('g.us'))
        stst = await xeon.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
 			num = await fetchJson(`https://api.telnyx.com/anonymous/v2/number_lookup/${senderNumber}`, {method: 'get'})
-       menu = `
+       allmenu = `
 🐶 Hi @${sender.split("@")[0]}
 
 シ︎ 𝐆𝐫𝐨𝐮𝐩 𝐂𝐡𝐚𝐭𝐬 : ${groups.length} 
@@ -1536,25 +1536,9 @@ Just Learn to Make Bots 🐶
  
 𝘼𝙈 𝙉𝙊𝙏 𝘼 𝙋𝙍𝙊𝙂𝙍𝘼𝙈𝙈𝙀𝙍 𝘽𝙍𝙊
 `
-sendButLocation(from, `${menu}`,`Renge ~Bot`, {jpegThumbnail:iye}, [{buttonId:`command`,buttonText:{displayText:'LIST MENU'},type:1},{buttonId:`donate`,buttonText:{displayText:'DONASI☕'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
+sendButLocation(from, `${allmenu}`,`Renge ~Bot`, {jpegThumbnail:iye}, [{buttonId:`command`,buttonText:{displayText:'LIST MENU'},type:1},{buttonId:`donate`,buttonText:{displayText:'DONASI☕'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
 
 break
-case 'credit':
-   dtod = '916909137213'
-   dtod1 = '916909137213'
-   dtod2 = '919774340154'
-   dtod3 = ''
-   dtod4 ='0'
-   var yez = `
-   [ 𝐶𝑟𝑒𝑑𝑖𝑡𝑠 𝐵𝑦 ] :
-   
- 🌿 : wa.me/${dtod1.split("@")[0]}
- 🌿 : wa.me/${dtod.split('@')[0]}
- 🌿 : wa.me/${dtod2.split('@')[0]}
- `
-     credit = xeon.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 1000, "message": `${yez}`, "footerText": "hehe", "thumbnail": iye, "surface": 'CATALOG'}}, {quoted: mek})
-            xeon.relayWAMessage(credit)
-        break
 case 'suit':
               if (!q) return reply(`Send orders ${prefix}suit scissors / stone / paper`)
               const userspilih = q
@@ -1966,7 +1950,7 @@ case 'command':
 xeon.sendMessage(from, listMsg, MessageType.listMessage, {contextInfo: { mentionedJid: [sender]},quoted:ftrol})
 break
 case 'downloadmenu':
-menu = `シ︎𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
+dlmenu = `シ︎𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
 ㋛${prefix}𝙮𝙩𝙢𝙥4 𝙡𝙞𝙣𝙠
 
 ㋛${prefix}𝙮𝙩𝙢𝙥3 𝙡𝙞𝙣𝙠
@@ -1977,7 +1961,7 @@ menu = `シ︎𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
 
 ㋛${prefix}𝙩𝙬𝙞𝙩𝙩𝙚𝙧 <𝙪𝙧𝙡>
 `
-sendButMessage(from, menu, `Renge ~Bot`, [
+sendButMessage(from, dlmenu, `Renge ~Bot`, [
           {
             buttonId: `command`,
             buttonText: {
@@ -1987,7 +1971,7 @@ sendButMessage(from, menu, `Renge ~Bot`, [
           },]);
 break
 case 'groupmenu':
-menu = `シ𝘎𝘳𝘰𝘶𝘱 𝘔𝘦𝘯𝘶︎シ︎
+grmenu = `シ𝘎𝘳𝘰𝘶𝘱 𝘔𝘦𝘯𝘶︎シ︎
 ㋛${prefix}grup [3 Button]
 
 ㋛${prefix}promote <reply chat member>
@@ -2028,7 +2012,7 @@ menu = `シ𝘎𝘳𝘰𝘶𝘱 𝘔𝘦𝘯𝘶︎シ︎
 
 ㋛${prefix}kickarea
 `
-sendButMessage(from, menu, `Renge ~Bot`, [
+sendButMessage(from, grmenu, `Renge ~Bot`, [
           {
             buttonId: `command`,
             buttonText: {
@@ -2038,7 +2022,7 @@ sendButMessage(from, menu, `Renge ~Bot`, [
           },]);
 break
 case 'ownermenu':
-menu = `シ︎𝘖𝘸𝘯𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
+owmenu = `シ︎𝘖𝘸𝘯𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
 ㋛${prefix}off
 
 ㋛${prefix}isbaileys
@@ -2091,7 +2075,7 @@ menu = `シ︎𝘖𝘸𝘯𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
 
 ㋛${prefix}colongsw [reply sw]
 `
-sendButMessage(from, menu, `Renge ~Bot`, [
+sendButMessage(from, owmenu, `Renge ~Bot`, [
           {
             buttonId: `command`,
             buttonText: {
@@ -2101,7 +2085,7 @@ sendButMessage(from, menu, `Renge ~Bot`, [
           },]);
 break
 case 'upswmenu':
-menu = `シ︎𝘜𝘱𝘴𝘸 𝘔𝘦𝘯𝘶シ︎
+upswmenu = `シ︎𝘜𝘱𝘴𝘸 𝘔𝘦𝘯𝘶シ︎
 ㋛${prefix}upswteks teks
 
 ㋛${prefix}upswvideo
@@ -2114,7 +2098,7 @@ menu = `シ︎𝘜𝘱𝘴𝘸 𝘔𝘦𝘯𝘶シ︎
 
 ㋛${prefix}upswlocation
 `
-sendButMessage(from, menu, `Renge ~Bot`, [
+sendButMessage(from, upswmenu, `Renge ~Bot`, [
           {
             buttonId: `command`,
             buttonText: {
@@ -2124,7 +2108,7 @@ sendButMessage(from, menu, `Renge ~Bot`, [
           },]);
 break
 case 'othermenu':
-menu = `シ︎𝘖𝘵𝘩𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
+otmenu = `シ︎𝘖𝘵𝘩𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
 ㋛${prefix}ping
 
 ㋛${prefix}inspect
@@ -2201,7 +2185,7 @@ menu = `シ︎𝘖𝘵𝘩𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
 
 ㋛${prefix}playstore <query>
 `
-sendButMessage(from, menu, `Renge ~Bot`, [
+sendButMessage(from, otmenu, `Renge ~Bot`, [
           {
             buttonId: `command`,
             buttonText: {
@@ -2211,7 +2195,7 @@ sendButMessage(from, menu, `Renge ~Bot`, [
           },]);
 break
 case 'makermenu':
-menu = `シ︎𝘔𝘢𝘬𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
+mkmenu = `シ︎𝘔𝘢𝘬𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
 ㋛${prefix}𝙨𝙩𝙞𝙘𝙠𝙚𝙧
 
 ㋛${prefix}𝙨𝙬𝙢 <𝙖𝙪𝙩𝙝𝙤𝙧|𝙥𝙖𝙘𝙠𝙣𝙖𝙢𝙚>
@@ -2252,7 +2236,7 @@ menu = `シ︎𝘔𝘢𝘬𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
 
 ㋛${prefix}waifu
 `
-sendButMessage(from, menu, `Renge ~Bot`, [
+sendButMessage(from, mkmenu, `Renge ~Bot`, [
           {
             buttonId: `command`,
             buttonText: {
