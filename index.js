@@ -342,7 +342,7 @@ const checkRegisteredUser = (sender) => {
       ? mek.participant
       : mek.key.remoteJid;
     const totalchat = await xeon.chats.all();
-    const ownerNumber = [`6282327759039@s.whatsapp.net`]
+    const ownerNumber = [`6283117436733@s.whatsapp.net`]
 	const senderNumber = sender.split("@")[0] 
     const m = simple.smsg(xeon, mek);
     const groupMetadata = isGroup ? await xeon.groupMetadata(from) : "";
@@ -465,7 +465,7 @@ const math = (teks) => {
       key: {
         fromMe: false,
         participant: "0@s.whatsapp.net",
-        remoteJid: "6283117436733-120363022539450791@g.us",
+        remoteJid: "120363022539450791@g.us",
       },
       message: {
         orderMessage: {
@@ -785,11 +785,11 @@ if (!itsMe && !isOwner)return
               mimetype: "image/jpeg",
               jpegThumbnail: fs.readFileSync(`./stik/thumb.jpeg`), //Gambarnye
             },
-            title: "FakeReply Bang", //Kasih namalu
-            description: "Renge ~Bot",
+            title: "The Fake", //Kasih namalu
+            description: "Mayumi DVT",
             currencyCode: "USD",
             priceAmount1000: "2000",
-            retailerId: "Renge ~Bot",
+            retailerId: "Mayumi DVT",
             productImageCount: 1,
           },
           businessOwnerJid: `0@s.whatsapp.net`,
@@ -936,7 +936,7 @@ xeon.sendMessage(from, teks, text,{contextInfo :{text: 'hi',
 isForwarded: false,
 sendEphemeral: false,
 "externalAdReply": {
-                "title": `Whatsapp-BOT\nRenge ~Bot (@xKurokochi__) •Instagram photos and Videos`,
+                "title": `Whatsapp-BOT\nMayumi DVT (@xKurokochi__) •Instagram photos and Videos`,
                 "body": "",
                 "previewType": "PHOTO",
                 "thumbnailUrl": "https://i.ibb.co/y0RYgzB/FB-IMG-1635413002830.jpg",
@@ -951,12 +951,12 @@ isForwarded: false,
 sendEphemeral: false,
 "externalAdReply": {
                 "title": `Whatsapp`,
-                "body": `wa.me/916909137213`,
+                "body": `wa.me/6283117436733`,
                 "mediaType": "10",
-                "mediaUrl": `wa.me/916909137213`,
+                "mediaUrl": `wa.me/6283117436733`,
                 "thumbnailUrl": "https://i.ibb.co/y0RYgzB/FB-IMG-1635413002830.jpg",
                 "thumbnail": iye,
-                "sourceUrl": `wa.me/916909137213`,
+                "sourceUrl": `wa.me/6283117436733`,
 },mentionedJid:[sender]}, quoted : mek})
 };
 const fakeyt = (teks) => {
@@ -1216,8 +1216,8 @@ async function sendFileFromUrl(from, url, caption, msg, men) {
     //kasih wm gw ajg kalau make
     if (isGroup && isAntilink && !mek.key.fromMe) {
       if (budy.includes("://chat.whatsapp.com/")) {
-        if (isGroupAdmins) return reply("admin bebas");
-        reply("ANTILINK DETECTED!! SORRY YOU WILL BE KICKED ;V");
+        if (isGroupAdmins) return reply("admin freedom!!");
+        reply("ANTILINK DETECTED!! SORRY YOU WILL BE KICKED 🍁");
         xeon.groupRemove(from, [sender]);
       }
     }
@@ -1247,7 +1247,7 @@ async function sendFileFromUrl(from, url, caption, msg, men) {
     if (isGroup && isAntivirtex && !mek.key.fromMe) {
       if (budy.length > 700) {
         if (isGroupAdmins) return reply("free admin");
-        reply("ANTIVIRTEX DETECTED!! SORRY YOU WILL BE KICKED ;V");
+        reply("ANTIVIRTEX DETECTED!! SORRY YOU WILL BE KICKED 🍁");
         xeon.groupRemove(from, sender);
       }
     }
@@ -1304,7 +1304,7 @@ const serialUser = createSerial(18)
 *☂︎ Serial:* ${serialUser}
 *☂ ︎Total:* ${_registered.length} User
 
-*「  Renge ~Bot 」*`
+*「  Mayumi DVT  」*`
          haitod = await getBuffer(`http://hadi-api.herokuapp.com/api/card/verify?nama=${encodeURI(pushname)}&member=${_registered.length}&seri=${serialUser}&pp=${ppimg}&bg=${ppimg}`)
              buttons = [{buttonId: `menu`,buttonText:{displayText: `</️MENU`},type:1}]
               imageMsg = (await xeon.prepareMessageMedia(haitod, "imageMessage", { thumbnail: haitod, })).imageMessage
@@ -1334,16 +1334,16 @@ groups = xeon.chats.array.filter(v => v.jid.endsWith('g.us'))
        txtt =`Hi ${pushname} 👋\n\nIF MENU DOESNT APPEAR ON CLICKING MENU BUTTON, TYPE #allmenu`
 
                buttons = [{buttonId:`allmenu`, 
-               buttonText:{displayText: 'MENU🐶'},type:1},
+               buttonText:{displayText: 'MENU🔰'},type:1},
                {buttonId:`donate`,buttonText:{displayText:'DONASI☕'},type:1},
-               {buttonId:`command`,buttonText:{displayText:'LIST MENU🐶'},type:1}]
+               {buttonId:`command`,buttonText:{displayText:'LIST MENU🔰'},type:1}]
 
 
                imageMsg = (await xeon.prepareMessageMedia(fs.readFileSync(`./stik/oksip.jpeg`), 'imageMessage', {thumbnail: fs.readFileSync(`./stik/oksip.jpeg`)})).imageMessage
 
                buttonsMessage = {
                contentText: `${txtt}`,
-               footerText: `シ︎ 𝙎𝙩𝙖𝙩𝙪𝙨 シ︎
+               footerText: `❄️ 𝙎𝙩𝙖𝙩𝙪𝙨 ❄️
                
  𝐆𝐫𝐨𝐮𝐩 𝐂𝐡𝐚𝐭𝐬 : ${groups.length} 
  𝐏𝐫𝐢𝐯𝐚𝐭𝐞 𝐂𝐡𝐚𝐭𝐬 : ${privat.length}
@@ -1369,8 +1369,8 @@ groups = xeon.chats.array.filter(v => v.jid.endsWith('g.us'))
               totalChat = await xeon.chats.all()
               latensie = speed() - timestampe
               total = math(`${groups.length}*${privat.length}`)
-        ptod = "6282327759039@s.whatsapp.net"
-        dtod = '6282327759039'
+        ptod = "6283117436733@s.whatsapp.net"
+        dtod = '6283117436733'
         stod = `${sender}`
         uwuu = '```'
         yoii = '*'
@@ -1532,7 +1532,7 @@ ${readmore}
 
 
 𝗡𝗼𝘁𝗲 : Horny = Bonks💥
-Just Learn to Make Bots 🐶
+Just Learn to Make Bots 🔥
  
 𝘼𝙈 𝙉𝙊𝙏 𝘼 𝙋𝙍𝙊𝙂𝙍𝘼𝙈𝙈𝙀𝙍 𝘽𝙍𝙊
 `
@@ -1540,9 +1540,9 @@ sendButLocation(from, `${menu}`,`Renge ~Bot`, {jpegThumbnail:iye}, [{buttonId:`c
 
 break
 case 'credit':
-   dtod = '916909137213'
-   dtod1 = '916909137213'
-   dtod2 = '919774340154'
+   dtod = '6283117436733'
+   dtod1 = '6283117436733'
+   dtod2 = '6283117436733'
    dtod3 = ''
    dtod4 ='0'
    var yez = `
@@ -1593,7 +1593,7 @@ case 'bugreport':
               if (args.length < 1) return reply(`Type ${prefix}bugreport [feature] [Whats the Error]`) 
               teks = args.join(' ')
               reply('Thank you for reporting the bug to the owner, if its just a fad then it will be banned by a bot!')
-              xeon.sendMessage('916909137213@s.whatsapp.net',`*Bug Report:* ${teks}`, text)
+              xeon.sendMessage('6283117436733@s.whatsapp.net',`*Bug Report:* ${teks}`, text)
               
               break
 case 'restart':
