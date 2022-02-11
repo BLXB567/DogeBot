@@ -465,7 +465,7 @@ const math = (teks) => {
       key: {
         fromMe: false,
         participant: "0@s.whatsapp.net",
-        remoteJid: "6283117436733-1604595598@g.us",
+        remoteJid: "6283117436733-120363022539450791@g.us",
       },
       message: {
         orderMessage: {
