@@ -132,9 +132,9 @@ nopref = false
 numbernye = '0'
 autoketik = false;
 prefixStatus = true;
-targetpc = "6282327759039"; 
-owner = "6282327759039"; 
-fakeyoi = "Niskata"; 
+targetpc = "6283117436733"; 
+owner = "6283117436733"; 
+fakeyoi = "Mayumi DVT"; 
 HunterApi = "Ikyy69", 
 xchillds = 'XChillDs' 
 hardi = 'hardianto', 
@@ -143,8 +143,8 @@ zeksapi = "vallganz5",
 dapapi = "HRHdL99iyl",
 ApiZeks = "https://api.zeks.xyz",
 zeksApikey = "Alphabott",
-nomorowner1 = "@6282327759039"; 
-fake = `𝗢𝘄𝗻𝗲𝗿 : ${fakeyoi}\n㋛︎ 𝗣𝗿𝗲𝗳𝗶𝘅 :「 ${prefixStatus ? "Multi Prefix" : "No Prefix"} 」`;
+nomorowner1 = "@6283117436733"; 
+fake = `𝗢𝘄𝗻𝗲𝗿 : ${fakeyoi}\nDVT 𝗣𝗿𝗲𝗳𝗶𝘅 :「 ${prefixStatus ? "Multi Prefix" : "No Prefix"} 」`;
 thumb = fs.readFileSync("./stik/thumb.jpeg"); 
 numbernye = "0"; 
 waktu = "-";
@@ -413,8 +413,8 @@ const timeWib = moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')
 cmhit.push(command)
     //MESS
     mess = {
-      wait: "𝙒𝙖𝙞𝙩 𝘼 𝙈𝙞𝙣𝙪𝙩𝙚 シ︎",
-      success: "Success シ︎",
+      wait: "𝙒𝙖𝙞𝙩 𝘼 𝙈𝙞𝙣𝙪𝙩𝙚.... ",
+      success: "Success...",
       wrongFormat: "Wrong format, try again in the menu",
       error: {
         stick: "not that sticker :v",
@@ -465,7 +465,7 @@ const math = (teks) => {
       key: {
         fromMe: false,
         participant: "0@s.whatsapp.net",
-        remoteJid: "6289523258649-1604595598@g.us",
+        remoteJid: "6283117436733-1604595598@g.us",
       },
       message: {
         orderMessage: {
@@ -474,7 +474,7 @@ const math = (teks) => {
           thumbnail: iye,
           surface: 200,
           message: iye,
-          orderTitle: "Renge ~Bot",
+          orderTitle: "Mayumi DVT",
           sellerJid: "0@s.whatsapp.net",
         },
       },
