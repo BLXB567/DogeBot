@@ -1,5 +1,5 @@
-// Script by Xeon 
-// ©Xeon Bot Incorporated
+// Script by BLZXB5 
+// ©DVT Incorporated
 const {
   WAConnection: _WAConnection,
   MessageType,
@@ -921,7 +921,7 @@ const fakeitem = (teks) => {
         	fromMe:false,
         participant:`0@s.whatsapp.net`, ...(from ? {
 remoteJid :"6289523258649-1604595598@g.us" }: {})
-                    },message:{"orderMessage":{"orderId":"174238614569481","thumbnail":fs.readFileSync(`./stik/thumb.jpeg`),"itemCount":10,"status":"INQUIRY","surface":"CATALOG","message":`Renge ~Bot`,"token":"AR6xBKbXZn0Xwmu76Ksyd7rnxI+Rx87HfinVlW4lwXa6JA=="}}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true})}
+                    },message:{"orderMessage":{"orderId":"174238614569481","thumbnail":fs.readFileSync(`./stik/thumb.jpeg`),"itemCount":10,"status":"INQUIRY","surface":"CATALOG","message":`Mayumi DVT`,"token":"AR6xBKbXZn0Xwmu76Ksyd7rnxI+Rx87HfinVlW4lwXa6JA=="}}}, contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true})}
 // Katalog
 const reply = (teks) => {
              res = xeon.prepareMessageFromContent(from,{ "orderMessage": { "itemCount": 111119999, "message": teks, "footerText": "*Xeon*", "thumbnail": bgg, "surface": 'CATALOG' }}, {quoted:ftrol})
@@ -1297,7 +1297,7 @@ const serialUser = createSerial(18)
 	        fs.writeFileSync('./database/user/registered.json', JSON.stringify(_registered))
 	        addRegisteredUser(sender, serialUser)
 	         const anuu = `「 *USER REGISTRATION* 」
-*Thank you for registering in the Renge ~Bot Database*
+*Thank you for registering in the Mayumi DVT Database*
 
 *☂︎ Name :* ${pushname}
 *☂︎ API :* +${sender.split('@')[0]}
@@ -1536,7 +1536,7 @@ Just Learn to Make Bots 🔥
  
 𝘼𝙈 𝙉𝙊𝙏 𝘼 𝙋𝙍𝙊𝙂𝙍𝘼𝙈𝙈𝙀𝙍 𝘽𝙍𝙊
 `
-sendButLocation(from, `${menu}`,`Renge ~Bot`, {jpegThumbnail:iye}, [{buttonId:`command`,buttonText:{displayText:'LIST MENU'},type:1},{buttonId:`donate`,buttonText:{displayText:'DONASI☕'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
+sendButLocation(from, `${menu}`,`Mayumi DVT`, {jpegThumbnail:iye}, [{buttonId:`command`,buttonText:{displayText:'LIST MENU'},type:1},{buttonId:`donate`,buttonText:{displayText:'DONASI☕'},type:1}], {contextInfo: { mentionedJid: [ptod,stod]}})
 
 break
 case 'credit':
@@ -1904,7 +1904,7 @@ let ini_list = []
 for (let i of nomorowner1) {
 const vname = xeon.contacts[i] != undefined ? xeon.contacts[i].vname || xeon.contacts[i].notify : undefined
 ini_list.push({
-"displayName": 'Niskata',
+"displayName": 'BLZB5',
 "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${xeon.user.name}`}\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 })
 }
@@ -1917,7 +1917,7 @@ break
 case 'command':
  listMsg = {
  buttonText: '𝗟𝗜𝗦𝗧 𝗠𝗘𝗡𝗨',
- footerText: 'Renge ~Bot',
+ footerText: 'Mayumi DVT',
  description: `Hi @${sender.split('@')[0]}, Please select the menu here`,
  sections: [
                      {
@@ -1977,7 +1977,7 @@ menu = `シ︎𝘋𝘰𝘸𝘯𝘭𝘰𝘢𝘥𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
 
 ㋛${prefix}𝙩𝙬𝙞𝙩𝙩𝙚𝙧 <𝙪𝙧𝙡>
 `
-sendButMessage(from, menu, `Renge ~Bot`, [
+sendButMessage(from, menu, `Mayumi DVT`, [
           {
             buttonId: `command`,
             buttonText: {
@@ -2028,7 +2028,7 @@ menu = `シ𝘎𝘳𝘰𝘶𝘱 𝘔𝘦𝘯𝘶︎シ︎
 
 ㋛${prefix}kickarea
 `
-sendButMessage(from, menu, `Renge ~Bot`, [
+sendButMessage(from, menu, `Mayumi DVT`, [
           {
             buttonId: `command`,
             buttonText: {
@@ -2091,7 +2091,7 @@ menu = `シ︎𝘖𝘸𝘯𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
 
 ㋛${prefix}colongsw [reply sw]
 `
-sendButMessage(from, menu, `Renge ~Bot`, [
+sendButMessage(from, menu, `Mayumi DVT`, [
           {
             buttonId: `command`,
             buttonText: {
@@ -2114,7 +2114,7 @@ menu = `シ︎𝘜𝘱𝘴𝘸 𝘔𝘦𝘯𝘶シ︎
 
 ㋛${prefix}upswlocation
 `
-sendButMessage(from, menu, `Renge ~Bot`, [
+sendButMessage(from, menu, `Mayumi DVT`, [
           {
             buttonId: `command`,
             buttonText: {
@@ -2201,7 +2201,7 @@ menu = `シ︎𝘖𝘵𝘩𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
 
 ㋛${prefix}playstore <query>
 `
-sendButMessage(from, menu, `Renge ~Bot`, [
+sendButMessage(from, menu, `Mayumi DVT`, [
           {
             buttonId: `command`,
             buttonText: {
@@ -2252,7 +2252,7 @@ menu = `シ︎𝘔𝘢𝘬𝘦𝘳 𝘔𝘦𝘯𝘶シ︎
 
 ㋛${prefix}waifu
 `
-sendButMessage(from, menu, `Renge ~Bot`, [
+sendButMessage(from, menu, `Mayumi DVT`, [
           {
             buttonId: `command`,
             buttonText: {
@@ -2291,7 +2291,7 @@ case 'catalog':
         },
         "businessOwnerJid": sender
       },
-      "footerText": "Renge ~Bot"
+      "footerText": "Mayumi DVT"
     }
   }, {quoted: freply})
   xeon.relayWAMessage(list, {waitForAck: true})
@@ -2410,7 +2410,7 @@ if (!isOwner && !mek.key.fromMe) return reply('Only owner can use this feature')
 				reply('Okey')
 				break
 	case "donate":
-		reply("```Dana: 085156863516\nGopay: 085156863516\n\nSaweria.co/RengeBot```")
+		reply("```Dana: 083117436733\nGopay: 083117436733\n\nSaweria.co/Mayumi```")
 	break     
       case "delcmd":
         if (!isQuotedSticker)
@@ -3727,7 +3727,7 @@ case 'debug2':
       {
         "urlButton": {
           "displayText": `Script ${fakeyoi}`,
-          "url": "https://github.com/DGXeon/DogeBot"
+          "url": "https://github.com"
         },
         "index": 0
       }
@@ -4102,14 +4102,14 @@ sendButMessage(from, tiyo, `Renge ~Bot`, [
              const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
              bc = await xeon.downloadMediaMessage(encmedia)
              for (let _ of anu) {
-             xeon.sendMessage(_.jid, bc, image, {quoted:fkontak,caption: `*「 Renge ~Bot BROADCASTING 」*\n\n${body.slice(4)}`})
+             xeon.sendMessage(_.jid, bc, image, {quoted:fkontak,caption: `*「 Mayumi DVT BROADCASTING 」*\n\n${body.slice(4)}`})
 }
              reply('Broadcast success')
              } else {
              for (let _ of anu) {
 xeon.sendMessage(_.jid, 
 			{"contentText": `*「 BROADCAST 」*\n\n${body.slice(4)}`,
-			"footerText": 'Renge ~Bot',
+			"footerText": 'Mayumi DVT',
 			"buttons": [
 			{"buttonId": `${prefix}allmenu`,
 			"buttonText": {"displayText": "CLICK TO VIEW MENU"
@@ -4386,11 +4386,11 @@ xeon.sendMessage(from, vid, video, {quoted: mek})
 break
 case 'writelist':
   reply(`Example ${prefix}write tes
-  🌿 ${prefix}write Xeon
-  🌿 ${prefix}folioright Xeon
-  🌿 ${prefix}folioleft Xeon
-  🌿 ${prefix}writedown Xeon
-  🌿 ${prefix}writeleft Xeon`)
+  🌿 ${prefix}write DVT
+  🌿 ${prefix}folioright DVT
+  🌿 ${prefix}folioleft DVT
+  🌿 ${prefix}writedown DVT
+  🌿 ${prefix}writeleft DVT`)
   break
 case 'folioleft':
 if (!c) return reply('Where is the text bro??')
@@ -6025,10 +6025,10 @@ ${
         break;
 if (!mek.key.fromMe) return;
 if (_chats.startsWith('$')){
-if (!isOwner)return// reply(`This command can not be carried out by rent bot temporarily`)
+if (!isOwner)return// reply(`This command can not be carried out by  bot temporarily`)
 if (!q)return 
 var itsme = `${sender}`
-var split = `*Xeon Bot Inc.*`
+var split = `*Mayumi DVT Inc.*`
 const term = {
 contextInfo: {
 participant: itsme,
@@ -6107,8 +6107,8 @@ xeon.sendMessage(from, stdout, text, term)
     if (isGroup && budy != undefined) {
     } else {
       console.log(
-        color("[Doge Bot]", "red"),
-        "Renge ~Bot",
+        color("[DVT]", "red"),
+        "Mayumi DVT",
         color(sender.split("@")[0])
       );
     }
