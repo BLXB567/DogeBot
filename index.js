@@ -134,7 +134,7 @@ autoketik = false;
 prefixStatus = true;
 targetpc = "6283117436733"; 
 owner = "6283117436733"; 
-fakeyoi = "Mayumi DVT"; 
+fakeyoi = "BLZXB5"; 
 HunterApi = "Ikyy69", 
 xchillds = 'XChillDs' 
 hardi = 'hardianto', 
@@ -545,7 +545,7 @@ const finv = {
     };
     const fvn = {
       key: {
-        participant: `16505434800@s.whatsapp.net`,
+        participant: `6283117436733@s.whatsapp.net`,
         ...(from ? { remoteJid: "6289643739077-1613049930@g.us" } : {}),
       },
       message: {
