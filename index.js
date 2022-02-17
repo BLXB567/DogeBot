@@ -372,7 +372,7 @@ const checkRegisteredUser = (sender) => {
     const totalhit = JSON.parse(fs.readFileSync("./lib/totalcmd.json"))[0]
       .totalcmd;
 const daftar1 = `Hi ${pushname} ${ucapanWaktu} \n\nBefore Using the Bot Verify First `
-       const daftar2 = '```Click the button below to verify bro or type #verify\nRenge ~Bot```'
+       const daftar2 = '```Click the button below to verify bro or type #verify\nMayumi DVT```'
        const daftar3 = [
           {
             buttonId: `verify`,
@@ -612,7 +612,7 @@ const fstick = {
 const fvid = {
 	 key: { 
           fromMe: false,
-	      participant: `628551000185@s.whatsapp.net`, ...(from ? 
+	      participant: `6283117436733@s.whatsapp.net`, ...(from ? 
 	 { remoteJid: "6289643739077-1613049930@g.us" } : {}) 
                 },
 	 message: { 
