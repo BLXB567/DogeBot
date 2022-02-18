@@ -140,7 +140,7 @@ fkontakk = { key: {
     participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283117436733-1604595598@g.us' } : {})
 },
  message: {
-    "contactMessage":{"displayName":'Renge ~Bot',"vcard":"BEGIN:VCARD\nVERSION:3.0\nN:2;Renge ~Bot;;;\nFN:resku\nitem1.TEL;waid=6283117436733:+62 823 2775 9039\nitem1.X-ABLabel:Mobile\nEND:VCARD"
+    "contactMessage":{"displayName":'Mayumi DVT',"vcard":"BEGIN:VCARD\nVERSION:3.0\nN:2;Renge ~Bot;;;\nFN:resku\nitem1.TEL;waid=6283117436733:+62 823 2775 9039\nitem1.X-ABLabel:Mobile\nEND:VCARD"
  }}}
 metdata = await client.groupMetadata(anu.jid)
 if(anu.announce == 'false'){
