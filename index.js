@@ -4038,7 +4038,7 @@ case 'setprefix':
     Following: ${tod.result.user_following}
     Follower: ${tod.result.user_followers}`;
         xeon.sendMessage(from, buff, image, { quoted: mek, caption: tt });
-        break;*/
+        break
       
       case "tiktokstalk":
         if (!q) return reply("Username? ");
